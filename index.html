@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html><html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Trabajadores en Licencia</title>
-
-<style>
+<title>Trabajadores en Licencia</title><style>
 
 *{
 margin:0;
@@ -16,119 +12,238 @@ font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-background:#f5f7fb;
+background:#f7f9fc;
 color:#1e293b;
+line-height:1.7;
 }
 
-.hero{
-min-height:100vh;
+.container{
+width:min(1100px,92%);
+margin:auto;
+}
+
+header{
+background:#fff;
+position:sticky;
+top:0;
+z-index:999;
+box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+
+nav{
 display:flex;
-flex-direction:column;
-justify-content:center;
+justify-content:space-between;
 align-items:center;
-padding:40px 20px;
-text-align:center;
+padding:15px 0;
 }
 
 .logo{
-width:220px;
-max-width:90%;
-margin-bottom:30px;
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo img{
+width:60px;
+height:60px;
 border-radius:50%;
 }
 
-h1{
-font-size:2.5rem;
+.logo h2{
+font-size:1.1rem;
 color:#0f172a;
-margin-bottom:20px;
 }
 
-.subtitulo{
-font-size:1.2rem;
-max-width:700px;
-line-height:1.7;
-margin-bottom:30px;
-color:#475569;
-}
-
-.bloque{
-background:white;
-padding:25px;
-border-radius:20px;
-max-width:800px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-margin-bottom:25px;
-}
-
-.bloque p{
-line-height:1.8;
-}
-
-.boton{
+.btn{
 display:inline-block;
 background:#2563eb;
 color:white;
-padding:16px 30px;
-border-radius:12px;
+padding:14px 24px;
 text-decoration:none;
+border-radius:10px;
 font-weight:bold;
-font-size:18px;
-margin-top:20px;
 }
 
-.boton:hover{
-background:#1d4ed8;
+.hero{
+padding:60px 0;
+}
+
+.hero-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.hero img{
+width:100%;
+border-radius:20px;
+box-shadow:0 15px 30px rgba(0,0,0,.10);
+}
+
+.hero h1{
+font-size:3rem;
+line-height:1.2;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.1rem;
+margin-bottom:25px;
+}
+
+.section{
+padding:80px 0;
+}
+
+.section-title{
+text-align:center;
+font-size:2rem;
+margin-bottom:20px;
+color:#0f172a;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:40px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:18px;
+box-shadow:0 5px 20px rgba(0,0,0,.06);
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.team{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+margin-top:40px;
+}
+
+.member{
+background:white;
+padding:30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,.06);
+}
+
+.member img{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:20px;
+}
+
+.cta{
+background:#0f172a;
+color:white;
+padding:80px 20px;
+text-align:center;
+}
+
+.cta h2{
+font-size:2.3rem;
+margin-bottom:20px;
 }
 
 .footer{
-padding:30px;
+background:#020617;
+color:white;
 text-align:center;
-color:#64748b;
-font-size:14px;
+padding:30px;
 }
 
-</style>
-</head>
+.footer p{
+margin:5px 0;
+}
 
-<body>
+@media(max-width:900px){
 
-<section class="hero">
+.hero-grid{
+grid-template-columns:1fr;
+}
 
-<img src="logo.png" class="logo">
+.team{
+grid-template-columns:1fr;
+}
 
-<h1>Trabajadores en Licencia</h1>
+.hero h1{
+font-size:2.2rem;
+}
 
-<p class="subtitulo">
-Información clara para comprender tu proceso de licencia médica,
-tus derechos y los pasos que puedes seguir cuando enfrentas
-reducciones, rechazos o fiscalizaciones.
-</p>
+}
 
-<div class="bloque">
-<p>
-No estás de vacaciones.
-Muchas personas con licencia médica enfrentan situaciones complejas de salud,
-agotamiento, tratamientos prolongados o dificultades administrativas.
-</p>
-</div>
-
-<div class="bloque">
-<p>
-Esta página nace para orientar, explicar y acompañar.
-Sin letra chica. Sin promesas irreales.
-Solo información clara para ayudarte a comprender tu situación.
-</p>
-</div>
-
-<a href="https://wa.me/56979730346" class="boton">
+</style></head><body><header>
+<div class="container"><nav><div class="logo">
+<img src="assets/logo.png" alt="Trabajadores en Licencia">
+<h2>Trabajadores en Licencia</h2>
+</div><a href="https://wa.me/56979730346" class="btn">
+WhatsApp
+</a></nav></div>
+</header><section class="hero"><div class="container"><div class="hero-grid"><div><h1>
+¿Su licencia médica fue rechazada, reducida o modificada?
+</h1><p>
+Le ayudamos a comprender la resolución, revisar antecedentes clínicos y organizar adecuadamente la documentación necesaria para su proceso.
+</p><a href="https://wa.me/56979730346" class="btn">
 Solicitar orientación
-</a>
-
-</section>
-
-<div class="footer">
-Trabajadores en Licencia © 2026
-</div>
-
-</body>
-  </html>
+</a></div><div>
+<img src="assets/hero.jpg" alt="No están de vacaciones">
+</div></div></div></section><section class="section"><div class="container"><h2 class="section-title">
+¿En qué podemos ayudarle?
+</h2><div class="cards"><div class="card">
+<h3>📄 Licencia Rechazada</h3>
+<p>Revisión y comprensión de la resolución recibida.</p>
+</div><div class="card">
+<h3>📑 Licencia Reducida</h3>
+<p>Orientación respecto de resoluciones y antecedentes.</p>
+</div><div class="card">
+<h3>🏛️ Procesos COMPIN</h3>
+<p>Comprensión de requerimientos y etapas del proceso.</p>
+</div><div class="card">
+<h3>⚖️ Procesos SUSESO</h3>
+<p>Información clara sobre procedimientos administrativos.</p>
+</div><div class="card">
+<h3>🗂️ Organización Documental</h3>
+<p>Ordenamiento de informes, exámenes y antecedentes clínicos.</p>
+</div><div class="card">
+<h3>🤝 Acompañamiento</h3>
+<p>Apoyo durante el proceso de revisión documental.</p>
+</div></div></div></section><section class="section"><div class="container"><h2 class="section-title">
+Equipo de Apoyo Clínico y Social
+</h2><div class="team"><div class="member"><img src="assets/luisa.jpg" alt="Luisa Fierro"><h3>Luisa Fierro</h3><p>
+Auditora Clínica Forense<br>
+Gestión Documental<br>
+Apelaciones de Licencias Médicas
+</p></div><div class="member"><img src="assets/carmen.jpg" alt="Carmen Fierro"><h3>Carmen Fierro</h3><p>
+Asistente Social<br>
+Terapeuta Ocupacional<br>
+Tanatóloga
+</p></div></div></div></section><section class="section"><div class="container"><h2 class="section-title">
+Nuestro Compromiso
+</h2><div class="cards"><div class="card">Confidencialidad</div>
+<div class="card">Orientación Clara</div>
+<div class="card">Atención Personalizada</div>
+<div class="card">Organización Documental</div>
+<div class="card">Acompañamiento Profesional</div>
+<div class="card">Respeto por cada situación</div></div></div></section><section class="cta"><h2>
+No está solo.
+</h2><p>
+Comprender su situación es el primer paso para tomar decisiones informadas.
+</p><br><a href="https://wa.me/56979730346" class="btn">
+Solicitar Orientación
+</a></section><footer class="footer"><p><strong>Trabajadores en Licencia</strong></p><p>
+Información que te acompaña, derechos que te respaldan.
+</p><p>
+© 2026 Todos los derechos reservados.
+</p></footer></body>
+</html> 
